@@ -28,7 +28,7 @@ public:
 
     }
 
-    BigReal operator ==(BigReal& anotherReal){
+    bool operator ==(BigReal& anotherReal){
 
     }
 
@@ -46,6 +46,5 @@ public:
     }
 
 };
-
 
 #endif //ASS2_BIGREAL_H
