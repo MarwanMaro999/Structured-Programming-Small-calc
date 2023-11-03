@@ -32,11 +32,11 @@ public:
 
     }
 
-    BigReal operator >=(BigReal& anotherReal){
+    bool operator >(BigReal& anotherReal){
 
     }
 
-    BigReal operator <=(BigReal& anotherReal){
+    bool operator <(BigReal& anotherReal){
 
     }
 
