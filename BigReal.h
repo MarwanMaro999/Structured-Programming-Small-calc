@@ -8,42 +8,27 @@ using namespace std;
 
 class BigReal {
 private:
-    char sign; //+,-
+    char sign; // +,-
     string integer, decimal;
-public:
-    //default contructor
-    BigReal():sign('+'),integer("0"),decimal("0"){
-
-    }
-    BigReal(string str){
-
-    }
-
+    string fullRealNumber;
     //operations
-    BigReal operator +(BigReal& another){
+    bool valid(string str);
+public:
+    //default constructor
+    BigReal();
+    BigReal(string str);
 
-    }
+    BigReal operator + (BigReal & another);
 
-    BigReal operator -(BigReal& another){
+//    BigReal operator - (BigReal & another);
+//
+//    bool operator == (BigReal & anotherReal);
+//
+//    bool operator > (BigReal & anotherReal);
+//
+//    bool operator < (BigReal & anotherReal);
 
-    }
-
-    bool operator ==(BigReal& anotherReal){
-
-    }
-
-    bool operator >(BigReal& anotherReal){
-
-    }
-
-    bool operator <(BigReal& anotherReal){
-
-    }
-
-    void print()
-    {
-        cout<< sign<< integer<< '.'<< decimal;
-    }
+    void print();
 
 };
 
