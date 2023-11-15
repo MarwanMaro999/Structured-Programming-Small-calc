@@ -6,28 +6,27 @@
 
 class Instructions {
 protected:
-    void load1();
-    void load2();
-    void store();
-    void move();
-    void add1();
-    void add2();
-    void jump();
-    void halt();
+    int start_address;
+    string regis[16];
+    string mem[256];
+    int progCnt;
+    void load1(string ir);
+    void load2(string ir);
+    void store(string ir);
+    void move(string ir);
+    void add1(string ir);
+    void jump(string ir);
 };
 
 class Machine_language : public Instructions{
-private:
-    int start_address;
-    int regis[16];
-    string mem[256];
+
 public:
 //    static int counter;
     Machine_language();
     void menu();
     void fetch();
     void execute();
-    void print(int pc,string ir);
+    void print(string ir);
 };
 
 
